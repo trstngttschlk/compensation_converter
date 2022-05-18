@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Your description goes here">
+		<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Compensation Convertor</title>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Compensation Convertor</h1>
+		<section>
+			<select id="dropdownList">
+				<option value="" selected>--select--</option>
+				<option value="hourToAnnual">Hourly -> Annual</option>
+				<option value="annualToHour">Annual -> Hourly</option>
+			</select>
+			<section>
+				<label>Enter your <span id="conversionType"></span>:</label>
+				<input id="userInput" type="text">
+				<button type='submit' id="enter">Enter</button>
+			</section>
+		</section>
+		<section>
+			<p>Your annual salary is:</p>
+			<h3 id="output"></h3>
+		</section>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
